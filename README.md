@@ -1,0 +1,3 @@
+This repository demonstrates a common error in Express.js applications where the request body (req.body) is undefined even after using the express.json() middleware. The bug.js file contains the erroneous code, and bugSolution.js provides the corrected version.
+
+The issue arises due to incorrect middleware order or missing middleware entirely.  The solution ensures the express.json() middleware is correctly placed before the route handler that expects JSON data.
